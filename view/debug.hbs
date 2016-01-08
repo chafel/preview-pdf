@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>错误！</title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			padding-top: 40px;
+	    padding-bottom: 40px;
+	    background-color: #eee;
+		}
+		.container {
+			text-align: center;
+			width: 800px;
+			margin: 20px auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container text-danger">
+		<h3>错误码：{{error.code}}:{{error.message}}</h3>
+		<p>错误信息：<strong>{{error.stack}}</strong></p>
+		<p>
+			Dump Information:<br />
+			<strong>Request-Id:</strong>{{requestId}}<br />
+			<strong>session-Id:</strong>{{sessionId}}<br />
+			<strong>user-info:</strong>{{userInfo}}<br />
+			<strong>project-info:</strong>{{projectInfo}}<br />
+		</p>
+	</div>
+</body>
+</html>
